@@ -1,0 +1,42 @@
+.main {
+    min-height: calc(100vh - 200px);
+}
+.carousel {
+    height:500px;
+    width:100%;
+}
+.carousel-item {
+    height:500px
+}
+.banner-Img {
+    height:100%;
+}
+.prod-main {
+    background-color: #e3e3e3;
+}
+/* !to be deleted .col-6 {
+    background-color: transparent;
+} */
+.prod-container {
+    background-color: transparent;
+}
+.prod-container > img {
+    height: 150px;
+    width:100%;
+}
+.prod-img {
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px; /* fallback */
+    -webkit-line-clamp: 9; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+.articles {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 600px;
+    background-color: white;
+    /* box-shadow: 2px 6px 5px 0px #a29999; */
+}

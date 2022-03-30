@@ -1,0 +1,41 @@
+.nav-color {
+    background-color: #17376E;
+}
+.nav-logo{
+    height: 50px;
+}
+.rounded-circle {
+    width: fit-content;
+    height: fit-content;
+}
+.rounded-3 {
+    width: fit-content;
+    height: fit-content;
+
+}
+@media (min-width: 1098px) and (max-width: 1126px) {
+    .nav-item {
+        font-size: 15px;
+    }
+}
+@media (min-width: 1068px) and (max-width: 1097px) {
+    .nav-item {
+        font-size: 14px;
+    }
+}
+@media (min-width: 1009px) and (max-width: 1067px) {
+    .nav-item {
+        font-size: 12px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1008px) {
+    .nav-item {
+        font-size: 11px;
+    }
+}
+@media (max-width: 991px) {
+    .vl {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+}

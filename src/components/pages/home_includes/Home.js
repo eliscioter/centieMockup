@@ -8,56 +8,24 @@ import FeaturedInnovator from './home_components/Featured_Innovator'
 import Articles from './home_components/Articles'
 
 
-export const fetchBannerData = async () => {
-    return await axios.get('https://picsum.photos/v2/list?page=1&limit=4')
-    .then(({data}) => {
-        return data;
-    })
-    .catch(err => {
-        console.log(err)
-    })
-}
-const fetchProductData = async () => {
-    return await axios.get('https://fakestoreapi.com/products?limit=8')
-    .then(({data}) => {
-        return data;
-    })
-    .catch(err => {
-        console.log(err)
-    })
-}
-const fetchInnovatorData = async () => {
-    return await axios.get('https://randomuser.me/api/?results=3')
-    .then(({data}) => {
-        return data;
-    })
-    .catch(err => {
-        console.log(err)
-    })
-}
-
-
-
-
-function Home() {
+function Home({ exhibit, feat_product, feat_innovator }) {
     const [banner, setBanner] = useState([])
     const [product, setProduct] = useState([])
     const [innovator, setInnovator] = useState([])
     
     useEffect (() => {
-        fetchBannerData().then(bannerData => {
+       exhibit.then(bannerData => {
             setBanner(bannerData);
-
         })
-        fetchProductData().then(prodData => {
+        feat_product.then(prodData => {
             setProduct(prodData)     
         })
-        fetchInnovatorData().then(innovatorData => {
+        feat_innovator.then(innovatorData => {
             setInnovator(innovatorData.results)
             // setInnovator(JSON.stringify(innovatorData, null, 2) || 'no product found');
 
         })
-    }, [])
+    }, [exhibit, feat_innovator, feat_product])
     return (
         
         <div className="main">

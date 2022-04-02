@@ -1,10 +1,10 @@
-.main {
+.Exhibit {
     min-height: calc(100vh - 200px);
 }
 .banner-img {
     background-image: url(../../../images/exhibits_banner.png);
     background-repeat: no-repeat;
-    height: 500px;
+    height: 300px;
     position: relative;
 }
 .banner-text {
@@ -13,4 +13,7 @@
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.Exhibit .card {
+    cursor: pointer;
 }

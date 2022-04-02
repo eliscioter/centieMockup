@@ -1,20 +1,23 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 
-import fetchBannerData from '../../home_includes/Home'
-
-export default function ExhibitComponent() {
-    const [exhibit, setExhibit] = useEffect([])
-
-    useEffect(() => {
-        fetchBannerData().then(exhibit =>{
-            setExhibit(exhibit)
-        })
-    })
-    
+export default function ExhibitComponent({ exhibits }) {
 
   return (
-    <div>
-        <img src={exhibit.dowload_url} alt="" />
+    <div className="container">
+      <div className="row g-3">
+        {
+          exhibits.map((exhibit, idx) => (
+            <div key={idx} className="col-md-4 col-lg-3">
+              <div className="card">
+                <img src={exhibit.download_url} alt={exhibit.author} />
+                <div className="card-body text-truncate">
+                  {exhibit.author}
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
     </div>
   )
 }

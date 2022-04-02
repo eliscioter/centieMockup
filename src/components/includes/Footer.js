@@ -7,7 +7,7 @@ import {FaFacebook, FaFacebookMessenger, FaArrowUp} from "react-icons/fa"
 
 function Footer() {
     return (
-        <>
+        <div className="Footer">
             <footer className="mt-auto">
                 <div className="container-fluid footer">
                     <div className="row p-md-3">
@@ -76,7 +76,7 @@ function Footer() {
                     </a>
                 </div>
             </footer>
-        </>
+        </div>
     );
 }
 

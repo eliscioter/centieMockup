@@ -11,7 +11,7 @@ import Contact from './components/pages/Contact';
 import Footer from './components/includes/Footer';
 
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Exhibit1 from './components/pages/Exhibit1';
+import Exhibit1 from './components/pages/exhibit_item_includes/Exhibit1';
 import Products from './components/pages/Product1';
 
 const fetchBannerData = async () => {

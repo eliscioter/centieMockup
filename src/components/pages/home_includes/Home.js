@@ -28,7 +28,7 @@ function Home({ exhibit, feat_product, feat_innovator }) {
     }, [exhibit, feat_innovator, feat_product])
     return (
         
-        <div className="main">
+        <div className="Home">
             
             {/* banner carousel */}
             <Carousel prop={banner} />

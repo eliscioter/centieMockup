@@ -1,0 +1,16 @@
+.Exhibit1 {
+    min-height: calc(100vh - 200px);
+}
+.Exhibit1 .banner-img {
+    background-image: url(../../../images/exhibit1_banner.png);
+    background-repeat: no-repeat;
+    height: 300px;
+    position: relative;
+}
+.Exhibit1 .banner-text {
+    position: absolute;
+    margin: 0;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

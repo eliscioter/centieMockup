@@ -9,7 +9,7 @@ import '../includes_css/Navbar.css'
 function Nabvar() {
     
     return (
-        <div className="container-fluid nav-color px-0">
+        <div className="container-fluid nav-color px-0 Navbar">
             <nav className="navbar navbar-expand-lg navbar-dark">
                 <div className="container-fluid mx-lg-3 text-light">
                     <Link className="navbar-brand me-1" to='/Home'><img className='nav-logo' src={logo} alt='National University Seal'/></Link>
@@ -48,7 +48,6 @@ function Nabvar() {
                                 </div>
                             </div>
                         </div>
-                       
                     </div>
                 </div>
             </nav>

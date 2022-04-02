@@ -7,7 +7,7 @@ const getFullName = (innovator) => {
 
 export default function FeaturedInnovator({ prop }) {
     return (
-        <div className="container my-5 p-lg-5">
+        <div className="container my-5 p-5">
             <div className="text-center mb-5">
                 <span className="fs-1 border-warning border-2 border-bottom">
                     Featured Innovators

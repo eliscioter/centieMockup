@@ -1,13 +1,14 @@
 .Exhibit {
     min-height: calc(100vh - 200px);
 }
-.banner-img {
+.Exihbit .banner-img {
     background-image: url(../../../images/exhibits_banner.png);
     background-repeat: no-repeat;
+    background-size: stretch;
     height: 300px;
     position: relative;
 }
-.banner-text {
+.Exibhit .banner-text {
     position: absolute;
     margin: 0;
     top: 35%;
@@ -16,4 +17,16 @@
 }
 .Exhibit .card {
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.Exhibit a:link, a:visited, a:active
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.Exhibit .card:hover {
+    box-shadow: -5px -5px 30px 5px yellow, 5px 5px 30px 5px blue;
+    transform: scale(1.1)
 }

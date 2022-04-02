@@ -1,4 +1,4 @@
-.main {
+.Home {
     min-height: calc(100vh - 200px);
 }
 .carousel {
@@ -19,10 +19,15 @@
 } */
 .prod-container {
     background-color: transparent;
+    overflow: hidden;
 }
 .prod-container > img {
     height: 150px;
     width:100%;
+    transition: transform .5s ease;
+}
+.prod-container:hover img {
+    transform: scale(1.1);
 }
 .prod-img {
     word-break: break-word;
@@ -32,6 +37,15 @@
     line-height: 16px; /* fallback */
     -webkit-line-clamp: 9; /* number of lines to show */
     -webkit-box-orient: vertical;
+}
+.Home .card {
+    cursor: pointer;
+}
+.innovator-container {
+    transition: all 0.2s ease;
+}
+.innovator-container:hover {
+    transform: scale(1.1)
 }
 .articles {
     overflow: scroll;

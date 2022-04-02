@@ -18,7 +18,7 @@ ul {
     list-style: none;
 }
 
-a:link, a:visited,  a:hover, a:active
+.Footer a:link, a:visited,  a:hover, a:active
 {
     color: #fff;
     text-decoration: none;

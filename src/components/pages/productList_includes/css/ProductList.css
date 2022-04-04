@@ -1,0 +1,40 @@
+.ProductList {
+    min-height: calc(100vh - 200px);
+}
+.ProductList .banner-img > img {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+/* .ProductList .banner-text {
+    position: relative;
+    margin: 0;
+    top: 35%;
+    left: 50%;
+    transform: translateY(-50%, 50%);
+} */
+
+.ProductList .prod-container {
+    background-color: transparent;
+    overflow: hidden;
+}
+.ProductList .prod-container > img {
+    height: 150px;
+    width:100%;
+    transition: transform .5s ease;
+}
+.ProductList .prod-container:hover img {
+    transform: scale(1.1);
+}
+.ProductList .prod-img {
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px; /* fallback */
+    -webkit-line-clamp: 9; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+.ProductList .card {
+    cursor: pointer;
+}

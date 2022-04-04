@@ -1,35 +1,35 @@
 .Home {
     min-height: calc(100vh - 200px);
 }
-.carousel {
+.Home .carousel {
     height:500px;
     width:100%;
 }
-.carousel-item {
+.Home .carousel-item {
     height:500px
 }
-.banner-Img {
+.Home .banner-Img {
     height:100%;
 }
-.prod-main {
+/* !.prod-main {
     background-color: #e3e3e3;
-}
+} */
 /* !to be deleted .col-6 {
     background-color: transparent;
 } */
-.prod-container {
+.Home .prod-container {
     background-color: transparent;
     overflow: hidden;
 }
-.prod-container > img {
+.Home .prod-container > img {
     height: 150px;
     width:100%;
     transition: transform .5s ease;
 }
-.prod-container:hover img {
+.Home .prod-container:hover img {
     transform: scale(1.1);
 }
-.prod-img {
+.Home .prod-img {
     word-break: break-word;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -41,13 +41,13 @@
 .Home .card {
     cursor: pointer;
 }
-.innovator-container {
+.Home .innovator-container {
     transition: all 0.2s ease;
 }
-.innovator-container:hover {
+.Home .innovator-container:hover {
     transform: scale(1.1)
 }
-.articles {
+.Home .articles {
     overflow: scroll;
     overflow-x: hidden;
     height: 600px;

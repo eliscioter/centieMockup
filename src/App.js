@@ -11,7 +11,7 @@ import Contact from './components/pages/Contact';
 import Footer from './components/includes/Footer';
 
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Exhibit1 from './components/pages/exhibit_item_includes/Exhibit1';
+import ProductList from './components/pages/productList_includes/ProductList';
 import Products from './components/pages/Product1';
 
 const fetchBannerData = async () => {
@@ -50,8 +50,8 @@ function App() {
           <Routes>
             <Route path='/' element={<Home exhibit={fetchBannerData()} feat_product={fetchProductData()} feat_innovator={fetchInnovatorData()} />}/>
             <Route path='/Exhibits' element={<Exhibits exhibits={fetchBannerData()} />}/>
-            <Route path='/Exhibits/Exhibit1' element={<Exhibit1 />}/>
-            <Route path='/Exhibits/Exhibit1/Product1' element={<Products />}/>
+            <Route path='/Exhibits/ProductList/:handler/:id' element={<ProductList />}/>
+            <Route path='/Exhibits/ProductList/Product1' element={<Products />}/>
             <Route path='/Gallery' element={<Gallery />}/>
             <Route path='/About' element={<About />}/>
             <Route path='/Contact' element={<Contact />}/>

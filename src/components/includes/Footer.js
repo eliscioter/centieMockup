@@ -26,19 +26,19 @@ function Footer() {
                                 Contents
                                 <ul>
                                     <li>
-                                    <Link to="/">Home</Link>
+                                    <Link to="/" className="text-light">Home</Link>
                                     </li>
                                     <li>
-                                    <Link to="/">Exhibits</Link>
+                                    <Link to="/Exhibits">Exhibits</Link>
                                     </li>
                                     <li>
-                                    <Link to="/">Gallery</Link>
+                                    <Link to="/Gallery">Gallery</Link>
                                     </li>
                                     <li>
-                                    <Link to="/">About</Link>
+                                    <Link to="/About">About</Link>
                                     </li>
                                     <li>
-                                    <Link to="/">Contact</Link>
+                                    <Link to="/Contact">Contact</Link>
                                     </li>
                                 </ul>
                             </div>

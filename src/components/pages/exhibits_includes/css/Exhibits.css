@@ -1,14 +1,13 @@
 .Exhibit {
     min-height: calc(100vh - 200px);
 }
-.Exihbit .banner-img {
-    background-image: url(../../../images/exhibits_banner.png);
+.Exhibit .banner-img {
     background-repeat: no-repeat;
     background-size: stretch;
     height: 300px;
     position: relative;
 }
-.Exibhit .banner-text {
+.Exhibit .banner-text {
     position: absolute;
     margin: 0;
     top: 35%;

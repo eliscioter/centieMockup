@@ -4,11 +4,7 @@ export default function FeaturedProduct({ prop }) {
   return (
     <div className="container my-5 p-5">
         <div className="text-center mb-5">
-            <span className="fs-1 text-center border-warning border-2 border-bottom "
-            data-mdb-toggle="animation"
-            data-mdb-animation="tada"
-            data-mdb-animation-start="onHover"
-            >Featured Products</span>
+            <span className="fs-1 text-center border-warning border-2 border-bottom">Featured Products</span>
         </div>
         <div className="row g-5">
             {

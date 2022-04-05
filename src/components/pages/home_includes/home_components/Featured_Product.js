@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 export default function FeaturedProduct({ prop }) {
   return (
     <div className="container my-5 p-md-5">
@@ -11,12 +11,21 @@ export default function FeaturedProduct({ prop }) {
                 prop.map((product, idx) => 
                 
                     <div key={idx} className="col-6 col-md-4 col-lg-3">
-                        <div className="card card-shadow prod-container img-hover-zoom">
-                            <img src={product.image} alt={product.description} className="w-100 img-thumbnail prod-img " />
-                            <div className="card-body text-truncate">
-                                <span>{product.title}</span>
+                        <Link
+                        to={`/Exhibits/ProductList/Product/${product.title}`}
+                        state={{
+                            image: product.image,
+                            description: product.description,
+                        }}
+                        >
+                            <div className="card card-shadow prod-container img-hover-zoom">
+                                <img src={product.image} alt={product.description} className="w-100 img-thumbnail prod-img " />
+                                <div className="card-body text-truncate">
+                                    <span className="text-dark">{product.title}</span>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
+                        
                     </div>
                     
                 )

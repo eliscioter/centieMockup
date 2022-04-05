@@ -1,18 +1,27 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function Carousel({ prop }) {
   return (
     <div  className="carousel carousel-fade slide" id="bannerCarousel" data-bs-ride="carousel">
         <div className="carousel-inner">
             {
                 prop.map((bannerImg, idx) => 
-                    
-                    <div key={idx} className={idx === 0 ? 'carousel-item active' : 'carousel-item'} >
-                        <img src={bannerImg.download_url} className="d-block w-100 banner-Img" alt={bannerImg.author} />
-                        <div className="carousel-caption d-none d-md-block">
-                            <h3>{bannerImg.author}</h3>
+                    <>
+                    <Link 
+                    to={`/Exhibits/ProductList/${bannerImg.author}/${idx}`}
+                    state={{
+                        banner: bannerImg.download_url
+                    }}>
+                        <div key={idx} className={idx === 0 ? 'carousel-item active' : 'carousel-item'} >
+                            <img src={bannerImg.download_url} className="d-block w-100 banner-Img" alt={bannerImg.author} />
+                            <div className="carousel-caption d-none d-md-block">
+                                <h3>{bannerImg.author}</h3>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
+                    
+                    </>
+                    
                 )
             }
         </div>

@@ -36,7 +36,11 @@
     -webkit-line-clamp: 9; /* number of lines to show */
     -webkit-box-orient: vertical;
 }
-
+.Home a:link, a:visited, a:active
+{
+    color: #000;
+    text-decoration: none;
+}
 .Home .articles {
     overflow: scroll;
     overflow-x: hidden;

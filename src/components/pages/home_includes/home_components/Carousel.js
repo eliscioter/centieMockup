@@ -6,22 +6,18 @@ export default function Carousel({ prop }) {
         <div className="carousel-inner">
             {
                 prop.map((bannerImg, idx) => 
-                    <>
-                    <Link 
-                    to={`/Exhibits/ProductList/${bannerImg.author}/${idx}`}
-                    state={{
-                        banner: bannerImg.download_url
-                    }}>
-                        <div key={idx} className={idx === 0 ? 'carousel-item active' : 'carousel-item'} >
+                    <div key={idx} className={idx === 0 ? 'carousel-item active' : 'carousel-item'} >
+                        <Link 
+                        to={`/Exhibits/ProductList/${bannerImg.author}/${idx}`}
+                        state={{
+                            banner: bannerImg.download_url
+                        }}>
                             <img src={bannerImg.download_url} className="d-block w-100 banner-Img" alt={bannerImg.author} />
                             <div className="carousel-caption d-none d-md-block">
                                 <h3>{bannerImg.author}</h3>
                             </div>
-                        </div>
-                    </Link>
-                    
-                    </>
-                    
+                        </Link>
+                    </div>
                 )
             }
         </div>

@@ -14,10 +14,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.Exhibit .card {
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
 
 .Exhibit a:link, a:visited, a:active
 {
@@ -25,7 +21,15 @@
     text-decoration: none;
 }
 
-.Exhibit .card:hover {
-    box-shadow: -5px -5px 30px 5px yellow, 5px 5px 30px 5px blue;
-    transform: scale(1.1)
+
+@media (min-width: 768px) {
+    .Exhibit .card {
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    
+    .Exhibit .card:hover {
+        box-shadow: -5px -5px 30px 5px yellow, 5px 5px 30px 5px blue;
+        transform: scale(1.1)
+    }
 }

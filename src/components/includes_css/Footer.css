@@ -14,7 +14,7 @@ footer {
 .links {
     text-align: center;
 }
-ul {
+.Footer ul {
     list-style: none;
 }
 
@@ -30,6 +30,7 @@ ul {
     left:0;
     bottom:0;
     right:0;
+    
 }
 .arrowUp {
     cursor: pointer;
@@ -46,12 +47,24 @@ ul {
         height: 400px;
     }
 } */
+@media (min-width:768px) {
+    .contents > div {
+        width: fit-content;
+    }
+}
 @media (max-width: 767px) {
     .footer {
         height: 400px;
     }
     .links {
-        text-align: left !important;
-        margin-top: 20px;
+        /* text-align: left !important; */
+        margin-top: 10px;
     }
+}
+@media (max-width: 767px) {
+    .contents {
+        width: 100% !important;
+        text-align: center;
+    }
+
 }

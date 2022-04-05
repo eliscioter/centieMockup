@@ -21,9 +21,9 @@ function Footer() {
                             </span>
                             {/* <span className="text-light">By National University</span> */}
                         </div>
-                        <div className="col-md-4 justify-content-center text-light">
-                            <div className="mx-md-auto" style={{width: "fit-content"}}>
-                                Contents
+                        <div className="col-md-4 justify-content-center text-light contents">
+                            <div className="mx-md-auto">
+                                <span className="fs-5">Contents</span> 
                                 <ul>
                                     <li>
                                     <Link to="/" className="text-light">Home</Link>
@@ -46,7 +46,7 @@ function Footer() {
                         </div>
                         <div className="col-md-2">
                             <div className="links">
-                                <div className="pe-lg-5 text-light">
+                                <div className="pe-lg-5 text-light fs-5">
                                     Follow us!
                                     <br />
                                 </div>
@@ -65,15 +65,15 @@ function Footer() {
                         </div>
                         <div className="col-md-1 text-end">
                             <span className="border rounded-circle px-1 pb-1 text-light arrowUp">
-                            <FaArrowUp />
+                                <a href=''>
+                                    <FaArrowUp />
+                                </a>
                             </span>
                         </div>
                     </div>
                 </div>
                 <div className="container-fluid">
-                    <a href='#'>
                         <div className="text-center copyright text-dark">COPYRIGHT&copy; @CENTIE INNOVATION HUB</div>
-                    </a>
                 </div>
             </footer>
         </div>

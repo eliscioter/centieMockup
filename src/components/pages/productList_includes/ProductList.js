@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import {Link, useParams, useLocation} from 'react-router-dom';
+import { Link, useParams, useLocation } from 'react-router-dom';
 import axios from 'axios'
 
 import './css/ProductList.css'
 
     let category;
     const fetchExhibit1Data = async (id) => {
-        console.log(id)
         if (Number(id) === 0) {
             category = 'jewelery'
         } else if (Number(id) === 1) {
@@ -17,10 +16,8 @@ import './css/ProductList.css'
         category = "women's clothing"
         }
         let baseUrl = `https://fakestoreapi.com/products/category/${category}`;
-        console.log(category)
         return await axios.get(baseUrl)
         .then(({data}) => {
-            console.log(data)
             return data;
         })
         .catch(err => {
@@ -37,7 +34,6 @@ function ProductList() {
 
     useEffect (() => {
         fetchExhibit1Data(id).then(productData => {
-            console.log(productData)
             setProduct(productData);
         })
         
@@ -52,7 +48,7 @@ function ProductList() {
                 </div> */}
             </div>
 
-            <section className="p-5">
+            <section className="p-md-5 my-3">
                 <div className="container">
                     
                     <div className="row g-5">
@@ -60,12 +56,20 @@ function ProductList() {
                             products.map((product, idx) => 
                             
                                 <div key={idx} className="col-6 col-md-4 col-lg-3">
-                                    <div className="card card-shadow prod-container img-hover-zoom">
-                                        <img src={product.image} alt={product.description} className="w-100 img-thumbnail prod-img " />
-                                        <div className="card-body text-truncate">
-                                            <span>{product.title}</span>
+                                    <Link 
+                                    to={`/Exhibits/ProductList/Product/${product.title}`}
+                                    state={{
+                                        image: product.image,
+                                        description: product.description,
+                                    }}>
+                                        <div className="card card-shadow prod-container img-hover-zoom">
+                                            <img src={product.image} alt={product.description} className="w-100 img-thumbnail prod-img" />
+                                            <div className="card-body text-truncate">
+                                                <span className="text-dark">{product.title}</span>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
+                                    
                                 </div>
                                 
                             )

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 
+import '../css/Exhibits.css'
 
 
 export default function ExhibitComponent({ exhibits }) {
@@ -27,7 +28,6 @@ export default function ExhibitComponent({ exhibits }) {
                 </div>
               </Link>
             </div>
-           
           })
         }
       </div>

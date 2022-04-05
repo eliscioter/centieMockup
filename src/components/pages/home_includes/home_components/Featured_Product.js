@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FeaturedProduct({ prop }) {
   return (
-    <div className="container my-5 p-5">
+    <div className="container my-5 p-md-5">
         <div className="text-center mb-5">
             <span className="fs-1 text-center border-warning border-2 border-bottom">Featured Products</span>
         </div>
